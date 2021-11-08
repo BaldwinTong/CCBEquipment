@@ -131,7 +131,9 @@ export default {
   },
   created() {},
   methods: {
-    onClickLeft() {},
+    onClickLeft() {
+       this.$router.go(-1);
+    },
     inputPrice(event) {
       if (this.form.weight) {
         this.form.totalPrice = event.target.value * this.form.weight;

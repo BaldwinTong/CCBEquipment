@@ -55,7 +55,9 @@ export default {
   },
   created() {},
   methods: {
-    onClickLeft() {},
+    onClickLeft() {
+       this.$router.go(-1);
+    },
   },
   computed: {},
 };

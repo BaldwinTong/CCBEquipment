@@ -124,7 +124,7 @@ export default {
   created() {},
   methods: {
     onClickLeft() {
-      console.log(213);
+       this.$router.go(-1);
     },
     handleClick(e) {
       this.Highlight = e;
